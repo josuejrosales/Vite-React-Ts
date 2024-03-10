@@ -48,11 +48,11 @@ function RecordAll() {
             <span className="actions">
               <button
                 className="edit"
-                onClick={(e) => setAction({ type: "update", data: item })}
+                onClick={() => setAction({ type: "update", data: item })}
               >
                 Edit
               </button>
-              <button className="delete" onClick={(e) => removeItem(item.id)}>
+              <button className="delete" onClick={() => removeItem(item.id)}>
                 Delete
               </button>
             </span>
